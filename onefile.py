@@ -198,7 +198,7 @@ class Program():
         return f"{temp}{line}"
 
 # Modify those below
-# Note thre should be a space between department and code like 'CS 101'
+# Note there should be a space between department and code like 'CS 101'
 
 year1fall = Semester('Freshman Fall', 
         [
@@ -263,29 +263,28 @@ year3spring = Semester('Junior Spring',
 # FOURTH YEAR
 year4fall = Semester('Senior Fall', 
         [
-        Course(3, "HUM 111",     "B",  "Cultures Civilizations and Ideas I"),
-        Course(2, "GE 301",      "B+", "Science Technology and Society"),
-        Course(3, "CS 315",      "A-",  "Programming Languages"),
-        Course(3, "EEE 391",     "A-",  "Signals and Systems"),
-        Course(3, "CS 484",      "B+",  "Computer Vision"),
+        Course(3, "HUM 111",     "B+",  "Cultures Civilizations and Ideas I"),
+        Course(3, "PSYC 100",    "B",   "Introduction to Psychology"),
+        Course(3, "EEE 391",     "B+",  "Signals and Systems"),
+        Course(3, "CS 484",      "A",   "Computer Vision"),
         Course(3, "CS 491",      "B+",  "Project Elective I"),
-        Course(0, "CS 399",      "SE", "Summer Training II"),
+        Course(0, "CS 399",      "SE",  "Summer Training II"),
         ])
 year4spring = Semester('Senior Spring', 
         [
-        Course(4, "CS 342",      "A", "Operating Systems"),
-        Course(3, "CS 464",      "A", "Machine Learning"),
-        Course(3, "CS 473",      "B", "Algorithms I"),
-        Course(3, "HUM 112",     "B",  "Cultures Civilizations and Ideas II"),
-        Course(3, "ECON 207",    "A-",  "Economics Theory for Engineers"), 
+        Course(4, "CS 342",      "A",   "Operating Systems"),
+        Course(3, "CS 464",      "A",   "Machine Learning"),
+        Course(3, "CS 473",      "B",   "Algorithms I"),
+        Course(3, "HUM 112",     "B+",  "Cultures Civilizations and Ideas II"),
         Course(3, "CS 492",      "B+",  "Project Elective II"),  
         ])
 year5fall = Semester('Additional Fall', 
         [
-        Course(4, "IE 400",      "B+",  "Principles of Engineering Management"),
-        Course(3, "CS 476",      "B-",  "Automata Theory and Formal Languages"),
-        Course(3, "CS 490",      "B+",  "Research in Computer Science"),
-        Course(3, "CS 483",      "A-",  "Natural Language Processing"),   
+        Course(3, "CS 476",      "B",   "Automata Theory and Formal Languages"),
+        Course(4, "IE 400",      "A-",  "Principles of Engineering Management"),
+        Course(2, "GE 301",      "A",   "Science Technology and Society"),
+        Course(3, "CS 490",      "A",   "Research in Computer Science"),
+        Course(3, "CS 483",      "B",   "Natural Language Processing"),
         ])
 
 program = Program()
