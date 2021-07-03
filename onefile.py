@@ -200,7 +200,7 @@ class Program():
 # Modify those below
 # Note there should be a space between department and code like 'CS 101'
 
-year1fall = Semester('Freshman Fall', 
+year1fall = Semester('2017-2018 Fall', 
         [
         Course(4, "CS 101",     "A",  "Algorithms and Programming I"),
         Course(3, "ENG 101",    "C-", "English and Composition I"),
@@ -211,7 +211,7 @@ year1fall = Semester('Freshman Fall',
         Course(1, "PE 110",     "B-", "Tennis"),
         Course(0, "GE 250",     "SE", "College Activities Program I"),
         ])
-year1spring = Semester('Freshman Spring', 
+year1spring = Semester('2017-2018 Spring', 
         [
         Course(4, "CS 102",     "A-", "Algorithms and Programming I"),
         Course(3, "ENG 101",    "F",  "English and Composition I"),
@@ -223,7 +223,7 @@ year1spring = Semester('Freshman Spring',
         ])
 
 # SECOND YEAR
-year2fall = Semester('Sophomore Fall', 
+year2fall = Semester('2018-2019 Fall', 
         [
         Course(3, "CS 201",     "C+", "Fundemental Structures of Computer Science I"),
         Course(3, "ENG 101",    "B+",  "English and Composition I"),
@@ -231,7 +231,7 @@ year2fall = Semester('Sophomore Fall',
         Course(4, "MATH 225",   "D",  "Linear Algebra and Differantial Equations"),
         Course(4, "PHYS 101",   "C+", "General Physics I"),
         ])
-year2spring = Semester('Sophomore Spring', 
+year2spring = Semester('2018-2019 Spring', 
         [
         Course(3, "CS 202",     "C+", "Fundemental Structures of Computer Science II"),
         Course(3, "ENG 102",    "B",  "English and Composition II"),
@@ -241,7 +241,7 @@ year2spring = Semester('Sophomore Spring',
         Course(4, "HIST 200",   "B",  "History of Turkey"),
         ])
 # THIRD YEAR
-year3fall = Semester('Junior Fall', 
+year3fall = Semester('2019-2020 Fall', 
         [
         Course(0, "CS 299",     "SE", "Summer Training I"),
         Course(3, "CS 201",     "B",  "Fundemental Structures of Computer Science I"),
@@ -250,7 +250,7 @@ year3fall = Semester('Junior Fall',
         Course(3, "HART 239",   "A-", "Latin I"),
         Course(3, "MATH 230",   "B-", "Probability and Statistics"),
         ])
-year3spring = Semester('Junior Spring', 
+year3spring = Semester('2019-2020 Spring', 
         [
         Course(4, "CS 342",     "UE",   "Operating Systems"),
         Course(3, "CS 353",     "SE",   "Database Systems"),
@@ -261,30 +261,36 @@ year3spring = Semester('Junior Spring',
         ])
 
 # FOURTH YEAR
-year4fall = Semester('Senior Fall', 
+year4fall = Semester('2020-2021 Fall', 
         [
-        Course(3, "HUM 111",     "B+",  "Cultures Civilizations and Ideas I"),
-        Course(3, "PSYC 100",    "B",   "Introduction to Psychology"),
-        Course(3, "EEE 391",     "B+",  "Signals and Systems"),
-        Course(3, "CS 484",      "A",   "Computer Vision"),
-        Course(3, "CS 491",      "B+",  "Project Elective I"),
-        Course(0, "CS 399",      "SE",  "Summer Training II"),
+        Course(3, "HUM 111",     "C+",   "Cultures Civilizations and Ideas I"),
+        Course(3, "PSYC 100",    "A-",   "Introduction to Psychology"),
+        Course(3, "EEE 391",     "B",    "Signals and Systems"),
+        Course(3, "CS 484",      "A+",   "Computer Vision"),
+        Course(3, "CS 491",      "A-",   "Senor Design Project I"),
+        Course(0, "CS 399",      "SE",   "Summer Training II"),
         ])
-year4spring = Semester('Senior Spring', 
+year4spring = Semester('2020-2021 Spring', 
         [
-        Course(4, "CS 342",      "A",   "Operating Systems"),
-        Course(3, "CS 464",      "A",   "Machine Learning"),
-        Course(3, "CS 473",      "B",   "Algorithms I"),
+        Course(4, "CS 342",      "B",   "Operating Systems"),
+        Course(3, "CS 464",      "B+",  "Machine Learning"),
+        Course(3, "IE 400",      "W",   "Principles of Engineering Management"),
         Course(3, "HUM 112",     "B+",  "Cultures Civilizations and Ideas II"),
-        Course(3, "CS 492",      "B+",  "Project Elective II"),  
+        Course(3, "CS 492",      "A",   "Senor Design Project II"),  
         ])
+year4summer = Semester('2020-2021 Summer', 
+        [
+        Course(2, "GE 301",      "A-",   "Science Technology and Society"),
+        Course(3, "CS 426",      "A",   "Parallel Computing"),
+        ])
+
+
 year5fall = Semester('Additional Fall', 
         [
-        Course(3, "CS 476",      "B",   "Automata Theory and Formal Languages"),
-        Course(4, "IE 400",      "A-",  "Principles of Engineering Management"),
-        Course(2, "GE 301",      "A",   "Science Technology and Society"),
-        Course(3, "CS 490",      "A",   "Research in Computer Science"),
-        Course(3, "CS 483",      "B",   "Natural Language Processing"),
+        Course(3, "CS 473",      "B+",   "Algorithms I"),
+        Course(3, "CS 476",      "A-",   "Automata Theory and Formal Languages"),
+        Course(3, "IE 400",      "A",   "Principles of Engineering Management"),
+        Course(3, "CS 483",      "A-",   "Elective"),
         ])
 
 program = Program()
@@ -292,13 +298,13 @@ program = Program()
 program.semesters += [  year1fall, year1spring, 
                         year2fall, year2spring, 
                         year3fall, year3spring,
-                        year4fall, year4spring,
+                        year4fall, year4spring, year4summer,
                         year5fall]
 
-print(year4fall) # print last 3 semesters
-print(year4spring)
-print(year5fall)
+print(program) # print last 3 semesters
+# print(year4spring)
+# print(year5fall)
 
-print(program) # print statistics
+# print(program) # print statistics
 
 
