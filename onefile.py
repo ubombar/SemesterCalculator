@@ -287,10 +287,10 @@ year4summer = Semester('2020-2021 Summer',
 
 year5fall = Semester('Additional Fall', 
         [
-        Course(3, "CS 473",      "B+",   "Algorithms I"),
+        Course(3, "CS 473",      "A-",   "Algorithms I"),
         Course(3, "CS 476",      "A-",   "Automata Theory and Formal Languages"),
-        Course(3, "IE 400",      "A",   "Principles of Engineering Management"),
-        Course(3, "CS 483",      "A-",   "Elective"),
+        Course(3, "IE 400",      "B+",   "Principles of Engineering Management"),
+        Course(3, "CS 483",      "A",   "Elective"),
         ])
 
 program = Program()
@@ -299,12 +299,8 @@ program.semesters += [  year1fall, year1spring,
                         year2fall, year2spring, 
                         year3fall, year3spring,
                         year4fall, year4spring, year4summer,
-                        year5fall]
+                        year5fall
+                    ]
 
-print(program) # print last 3 semesters
-# print(year4spring)
-# print(year5fall)
-
-# print(program) # print statistics
-
-
+print(program)
+print(year5fall)
